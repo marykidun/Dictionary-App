@@ -2,3 +2,9 @@ h6 {
   color: black;
   opacity: 0.8;
 }
+
+.Meaning .example {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+}
