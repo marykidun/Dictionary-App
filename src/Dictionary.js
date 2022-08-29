@@ -25,8 +25,8 @@ export default function Dictionary() {
 
     let pexelsApiKey =
       "563492ad6f917000010000012e0dd7272df847cd8f9e8afaa5f9ac29";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
-    let headers = { Autorization: `Bearer ${pexelsApiKey}` };
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
   function handleKeywordChange(event) {
@@ -44,7 +44,7 @@ export default function Dictionary() {
             autofocus={true}
           />
         </form>
-        <div className="hint">suggested words: nature, world, sea</div>
+        <div className="hint">Suggested words: nature, world, sea</div>
       </section>
       <Results results={results} />
       <Photos photos={photos} />

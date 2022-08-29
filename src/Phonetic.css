@@ -1,5 +1,5 @@
 .Phonetic {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .Phonetic a {
@@ -10,7 +10,7 @@
   transition: all 150ms ease-in-out;
   font-size: 12px;
   font-weight: bold;
-  margin-right: 10px;
+  margin: 10px;
 }
 .Phonetic a:hover {
   background-color: antiquewhite;
